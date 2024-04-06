@@ -1,0 +1,225 @@
+<html lang="en" style="--bg: #1b1b1b; --default-color-active: #fff; --default-color: #959595; --stroke: rgba(151, 151, 151, 0.87); --default-shadow: rgb(0, 0, 0); --default-card: #202020;"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Tokyani </title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/images/logo.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/images/logo.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/images/logo.png">
+    <link rel="apple-touch-icon" href="./assets/images/logo.png">
+    <script type="text/javascript" src="https://raw.githubusercontent.com/flouthoc/blinkTitle.js/master/index.js"></script>
+
+    <!-- Primary meta tags -->
+    <meta name="title" content="Tokyani — back-end developer and Minecrafter">
+    <meta name="description" content="I craft responsive websites where technologies meet creativity">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Tokyani — Python and Java developer">
+    <meta property="og:description" content="I craft responsive websites where technologies meet creativity">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en">
+    <meta property="og:site_name" content="Tokyani">
+</head>
+<body>
+    <noscript>You should enable JavaScript to view site content!</noscript>
+    <script>
+        document.onkeydown = function(e) {
+        if(event.keyCode == 123) {
+            return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+            return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'S'.charCodeAt(0)) {
+            return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+    }
+
+    document.oncontextmenu = function(e) {
+        var t = e || window.event;
+        var n = t.target || t.srcElement;
+        if (n.nodeName != "A") return false;
+    }
+    
+    var devtools = function() {};
+    devtools.isOpen = false;
+    devtools.orientation = undefined;
+
+    var threshold = 160;
+    var checkStatus = function() {
+        var widthThreshold = window.outerWidth - window.innerWidth > threshold;
+        var heightThreshold = window.outerHeight - window.innerHeight > threshold;
+        var orientation = widthThreshold ? 'vertical' : 'horizontal';
+
+        if (!(heightThreshold && widthThreshold) && ((window.Firebug && window.Firebug.chrome && window.Firebug.chrome.isInitialized) || widthThreshold || heightThreshold)) {
+            if (!devtools.isOpen || devtools.orientation !== orientation) {
+                devtools.isOpen = true;
+                devtools.orientation = orientation;
+                window.location.href = "https://err.tokyani.space/index.php?source=bio";
+            }
+        } else {
+            if (devtools.isOpen) {
+                devtools.isOpen = false;
+                devtools.orientation = undefined;
+            }
+        }
+    };
+
+    setInterval(checkStatus, 1000);
+    </script>
+    <header class="header">
+        <div class="container">
+            <div class="logo"><img src="assets/images/logo.png" alt="Logo"></div>
+            <nav class="menu">
+                <ul>
+                    <li class="menu-item active hover-line"><a href="#">Главная</a></li>
+                    <li class="menu-item hover-line"><a href="#contacts">Контакты</a></li>
+                    <li class="menu-item hover-line"><button id="theme"><i class="ri-sun-line"></i></button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="main">
+        <div class="container">
+            <div class="main">
+                <h1 class="main-title">Обо мне</h1>
+                <div class="main-description" id="main-description">Я майнкрафтер (aka Java DEV)</div><span class="typed-cursor" aria-hidden="true">  </span>
+            </div>
+        </div>
+    </section>
+    <section id="contacts">
+        <div class="container">
+            <div class="section-info">
+                <div class="section-title">Контакты</div>
+                <div class="section-description">Где вы можете <span>связаться</span> со мной</div>
+            </div>
+            <div class="contacts-buttons">
+                <a href="javascript:void(0)" onclick="javascript:window.location.href='https:\/\/discord.com\/users\/1136984712620028035';" class="btn contact-btn">Дискорд</a>
+                <a href="javascript:void(0)" onclick="javascript:window.location.href='https:\/\/t.me\/dmertixddd';" class="btn contact-btn">Telegram</a>
+                <a href="javascript:void(0)" onclick="javascript:window.location.href='https:\/\/vk.com\/tokyani';" class="btn contact-btn">ВКонтакте</a>
+            </div>
+        </div>
+        <section id="about-me">
+            <div class="container">
+                <div class="section-info">
+                    <div class="section-title">О себе</div>
+                    <div class="section-description">Здесь я <span>расскажу</span> о себе</div>
+                </div>
+                <div class="hero">
+                    <div class="hero-content">
+                        <p>Я — Backend разработчик из России. Умею создавать программы на языках указанных ниже.</p>
+                    </div>
+                    <div class="skills">
+                        <div class="skills-title">Навыки</div>
+                        <div class="skills-list">
+                            <ul>
+                                <li class="skill-card">
+                                    <div class="skill-title">Языки программирования</div>
+                                    <div class="skill-content">Python, Java</div>
+                                </li>
+                                <li class="skill-card">
+                                    <div class="skill-title">Базы данных</div>
+                                    <div class="skill-content">MySQL</div>
+                                </li>
+                                <li class="skill-card">
+                                    <div class="skill-title">Остальное</div>
+                                    <div class="skill-content">HTML, CSS</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <div class="section-info">
+                <div class="section-title">Мои работы</div>
+                <div class="section-description">Работы, которые <span>я разрабатываю</span></div>
+            </div>
+            <div class="projects-list">
+                <ul>
+                    <li class="project">
+                        <img src="https://r2.e-z.host/56832451-183a-482a-9449-24879f7422ea/s1fl9wjg.jpg" alt="Tokyani" class="project-image">
+                        <div class="project-info">
+                            <div class="project-title">eXp1oit Project</div>
+                            <div class="project-description">Чит-клиент (закрыт)</div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="javascript:void(0)" onclick="javascript:window.location.href='https:\/\/t.me\/eXp1oitProject';" class="btn project-btn">ССЫЛКА</a>
+                        </div>
+                    </li>
+                    <li class="project1">
+                        <img src="https://r2.e-z.host/56832451-183a-482a-9449-24879f7422ea/4dmll390.png" alt="Tokyani" class="project-image1">
+                        <div class="project-info">
+                            <div class="project-title">Hikka Modules</div>
+                            <div class="project-description">Да да, да</div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="javascript:void(0)" onclick="javascript:window.location.href='https:\/\/heta.tokyani.space';" class="btn project-btn">ССЫЛКА</a>
+                        </div>
+                    </li>
+                    <li class="project2">
+                        <img src="https://r2.e-z.host/56832451-183a-482a-9449-24879f7422ea/42fjpvqe.jpg" alt="Tokyani" class="project-image2">
+                        <div class="project-info">
+                            <div class="project-title">TokyaniShop</div>
+                            <div class="project-description">Лучший шоп по продаже Telegram Premium (закрыт)</div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="javascript:void(0)" onclick="javascript:window.location.href='https:\/\/t.me\/TokyaniShop_Bot';" class="btn project-btn">ССЫЛКА</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="footer"></div>
+   
+    <script type="text/javascript" src="assets/js/index.js"></script>
+    <script type="text/javascript" src="assets/js/title.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#main-description', {
+        strings: ['Я, Python разработчик', 'Я майнкрафтер (aka Java DEV)', 'Я, гений', 'Я, Tokyani'],
+        typeSpeed: 100,
+        backSpeed: 100,
+        cursorChar: '  ',
+        shuffle: true,
+        smartBackspace: false,
+        loop: true
+        });
+    </script><style data-typed-js-cursor-css="true">
+        .typed-cursor{
+          opacity: 1;
+        }
+        .typed-cursor.typed-cursor--blink{
+          animation: typedjsBlink 0.7s infinite;
+          -webkit-animation: typedjsBlink 0.7s infinite;
+                  animation: typedjsBlink 0.7s infinite;
+        }
+        @keyframes typedjsBlink{
+          50% { opacity: 0.0; }
+        }
+        @-webkit-keyframes typedjsBlink{
+          0% { opacity: 1; }
+          50% { opacity: 0.0; }
+          100% { opacity: 1; }
+        }
+      </style>
+
+
+</body></html>
