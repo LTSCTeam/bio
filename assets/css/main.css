@@ -212,21 +212,21 @@
 
 .project1 {
     background-color: var(--default-card);
-    height: 230px;
-    width: 300px;
+    height: 530px;
+    width: 360px;
     border: 3px solid var(--stroke);
 }
 
 .project-image1 {
     max-width: 100%;
     display: block;
-    aspect-ratio: 16/3;
+    aspect-ratio: 1/1;
     border-bottom: 3px solid var(--stroke);
 }
 
 .project2 {
     background-color: var(--default-card);
-    height: 550px;
+    height: 530px;
     width: 360px;
     border: 3px solid var(--stroke);
 }
